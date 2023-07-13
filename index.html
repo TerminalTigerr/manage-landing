@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--========== UNICONS ==========-->
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
 		<link rel="stylesheet" href="./css/main.css">
 		<title>Manage Landing Page</title>
 	</head>
@@ -29,6 +32,24 @@
 					baseline hover:bg-brightRedLight">
 					Get started
 				</a>
+
+				<!--======== Hamburger Icon ====-->
+				<div id="menu-btn" class="hamburger md:hidden focus:outline-none">
+					<i class="uil uil-bars text-black text-3xl cursor-pointer"></i>
+				</div>
+			</div>
+
+			<!--========== Mobile Menu ===========-->
+			<div class="md:hidden">
+				<div id="menu" class="absolute flex flex-col items-center self-end
+					py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center
+					left-6 right-6 drop-shadow-md">
+					<a href="#" class="hover:text-brightRed">Pricing</a>
+					<a href="#" class="hover:text-brightRed">Product</a>
+					<a href="#" class="hover:text-brightRed">About Us</a>
+					<a href="#" class="hover:text-brightRed">Careers</a>
+					<a href="#" class="hover:text-brightRed">Community</a>
+				</div>
 			</div>
 		</nav>
 
@@ -236,7 +257,70 @@
 
 		<!--========= Footer ============-->
 		<footer class="bg-veryDarkBlue">
-			
+			<!--===== Flex Container =======-->
+			<div class="flex flex-col-reverse justify-between px-6 py-10 
+				mx-auto space-y-8 md:flex-row md:space-y-0">
+				<!--========= Logo and social links container ========-->
+				<div class="flex flex-col-reverse items-center justify-between  space-y-12
+					md:flex-col md:space-y-0 md:items-start">
+					<div class="mx-auto my-6 text-center text-white md:hidden">
+						Copyright &copy; 2023 All Rights Reserved
+					</div>
+					<div>
+						<img src="img/logo-white.svg" class="h-8" alt="">
+					</div>
+					<!--=========== Social Links ==========-->
+					<div class="flex justify-center space-x-4">
+						<a href="#">
+							<i class="uil uil-facebook text-white text-3xl h-8" ></i>
+						</a>
+						<a href="#">
+							<i class="uil uil-youtube text-white text-3xl h-8"></i>
+						</a>
+						<a href="#">
+							<i class="uil uil-twitter text-white text-3xl h-8"></i>
+						</a>
+						<a href="#">
+							<i class="uil uil-instagram text-white text-3xl h-8"></i>
+						</a>
+						<a href="#">
+							<i class="uil uil-dribbble text-white text-3xl h-8"></i>
+						</a>
+					</div>
+				</div>
+
+				<!--========== List Container =========-->
+				<div class="flex space-x-32">
+					<div class="flex flex-col space-y-3 text-white">
+						<a href="#" class="hover:text-brightRed">Home</a>
+						<a href="#" class="hover:text-brightRed">Pricing</a>
+						<a href="#" class="hover:text-brightRed">Products</a>
+						<a href="#" class="hover:text-brightRed">About</a>
+					</div>
+					<div class="flex flex-col space-y-3 text-white">
+						<a href="#" class="hover:text-brightRed">Careers</a>
+						<a href="#" class="hover:text-brightRed">Community</a>
+						<a href="#" class="hover:text-brightRed">Privacy Policy</a>
+					</div>
+				</div>
+
+				<!--========= Input Container ============-->
+				<div class="flex flex-col justify-between">
+					<form>
+						<div class="flex space-x-3">
+							<input type="text" class="flex-1 px-4 rounded-full focus:outline py-2"
+								placeholder="Updated in your inbox" />
+							<button class="px-6 py-2 text-white bg-brightRed rounded-full
+								hover:bg-brightRedLight ">
+								Go
+							</button>
+						</div>
+					</form>
+					<div class="hidden text-white md:block">
+						Copyright &copy; 2023, All Rights Reserved
+					</div>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
